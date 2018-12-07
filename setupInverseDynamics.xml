@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="30000">
+   <InverseDynamicsTool name="generic">
+      <time_range>[0.005 10]</time_range>
+      <forces_to_exclude>actuators muscles</forces_to_exclude>
+      <lowpass_cutoff_frequency_for_coordinates>12</lowpass_cutoff_frequency_for_coordinates>
+      <joints_to_report_body_forces>All</joints_to_report_body_forces>
+   </InverseDynamicsTool>
+</OpenSimDocument>

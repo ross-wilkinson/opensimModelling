@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="30000">
+   <InverseKinematicsTool name="generic">
+      <constraint_weight>infinity</constraint_weight>
+      <accuracy>1e-05</accuracy>
+      <IKTaskSet file="D:\opensim\tasksInverseKinematics.xml"/>
+      <time_range>[0 0]</time_range>
+      <report_errors>true</report_errors>
+      <report_marker_locations>true</report_marker_locations>
+   </InverseKinematicsTool>
+</OpenSimDocument>

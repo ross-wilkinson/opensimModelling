@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="30000">
+   <ExternalLoads name="generic">
+      <objects>
+         <ExternalForce name="forceRight">
+            <isDisabled>false</isDisabled>
+            <applied_to_body>calcn_r</applied_to_body>
+            <force_expressed_in_body>ground</force_expressed_in_body>
+            <point_expressed_in_body>ground</point_expressed_in_body>
+            <force_identifier>forceRight</force_identifier>
+            <point_identifier>pointRight</point_identifier>
+         </ExternalForce>
+         <ExternalForce name="forceLeft">
+            <isDisabled>false</isDisabled>
+            <applied_to_body>calcn_l</applied_to_body>
+            <force_expressed_in_body>ground</force_expressed_in_body>
+            <point_expressed_in_body>ground</point_expressed_in_body>
+            <force_identifier>forceLeft</force_identifier>
+            <point_identifier>pointLeft</point_identifier>
+         </ExternalForce>
+      </objects>
+      <lowpass_cutoff_frequency_for_load_kinematics>-1</lowpass_cutoff_frequency_for_load_kinematics>
+   </ExternalLoads>
+</OpenSimDocument>

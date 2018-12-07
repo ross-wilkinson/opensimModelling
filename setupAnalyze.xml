@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="30000">
+   <AnalyzeTool name="generic">
+      <replace_force_set>false</replace_force_set>
+      <output_precision>8</output_precision>
+      <initial_time>0.005</initial_time>
+      <final_time>9.995</final_time>
+      <solve_for_equilibrium_for_auxiliary_states>false</solve_for_equilibrium_for_auxiliary_states>
+      <maximum_number_of_integrator_steps>20000</maximum_number_of_integrator_steps>
+      <maximum_integrator_step_size>1</maximum_integrator_step_size>
+      <minimum_integrator_step_size>1e-08</minimum_integrator_step_size>
+      <integrator_error_tolerance>1e-05</integrator_error_tolerance>
+      <AnalysisSet name="Analyses">
+         <objects>
+            <PointKinematics name="PointKinematics">
+               <on>false</on>
+               <start_time>0.005</start_time>
+               <end_time>9.995</end_time>
+               <step_interval>1</step_interval>
+               <in_degrees>true</in_degrees>
+               <relative_to_body_name>ground</relative_to_body_name>
+               <point>[0 0 0]</point>
+            </PointKinematics>
+            <MuscleAnalysis name="MuscleAnalysis">
+               <on>false</on>
+               <start_time>0.005</start_time>
+               <end_time>9.995</end_time>
+               <step_interval>1</step_interval>
+               <in_degrees>true</in_degrees>
+               <muscle_list>all</muscle_list>
+               <moment_arm_coordinate_list>all</moment_arm_coordinate_list>
+               <compute_moments>true</compute_moments>
+            </MuscleAnalysis>
+            <BodyKinematics name="BodyKinematics">
+               <on>false</on>
+               <start_time>0.005</start_time>
+               <end_time>9.995</end_time>
+               <step_interval>1</step_interval>
+               <in_degrees>true</in_degrees>
+               <bodies>all</bodies>
+               <express_results_in_body_local_frame>false</express_results_in_body_local_frame>
+            </BodyKinematics>
+         </objects>
+      </AnalysisSet>
+      <ControllerSet name="Controllers"/>
+      <lowpass_cutoff_frequency_for_coodinates>12</lowpass_cutoff_frequency_for_coodinates>
+   </AnalyzeTool>
+</OpenSimDocument>
